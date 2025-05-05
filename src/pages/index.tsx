@@ -1,10 +1,11 @@
 import { ReactNode } from "react";
 import { Layout } from "../layouts";
+import Banner from "../components/banner/Banner";
 
 const Index = () => {
     return (
-        <div className="container">
-            xin chao
+        <div className="flex flex-col items-center">
+            <Banner />
         </div>
     );
 };
