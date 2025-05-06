@@ -1,7 +1,7 @@
 import CustomButton from "../custom/CustomButton";
 import Image from "next/image";
 
-const PromoCodeLeft = () => {
+const PromoCodeInner = () => {
   return (
     <div className="flex">
         <div className="flex flex-col gap-4">
@@ -35,4 +35,4 @@ const PromoCodeLeft = () => {
   );
 };
 
-export default PromoCodeLeft;
+export default PromoCodeInner;

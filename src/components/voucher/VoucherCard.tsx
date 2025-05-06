@@ -47,7 +47,7 @@ const VoucherCard = () => {
                 <div className="text-[#D2CACA] font-semibold text-[16px] line-through">
                   {voucher.originalPrice}
                 </div>
-                <div className="text-[#FFFFFF] font-semibold text-[16px] line-through">
+                <div className="text-[#FFFFFF] font-semibold text-[16px]">
                   {voucher.discountedPrice}
                 </div>
               </div>
