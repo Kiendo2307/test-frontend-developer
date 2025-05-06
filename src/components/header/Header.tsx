@@ -1,4 +1,3 @@
-import Image from "next/image"
 import LeftHeader from "./LeftHeader";
 import RightHeader from "./RightHeader";
 const Header = () => {

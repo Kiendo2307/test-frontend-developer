@@ -20,16 +20,9 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1155px;
     margin: 0 auto;
     padding: 0 16px;
-}
-
-.border-gradient {
-    border: 1px solid;
-    border-image-source: linear-gradient(96.75deg, #C9C9C9 -2.49%, #000000 51.75%, #C9C9C9 102.95%);
-    border-image-slice: 1;
-    border-radius: 50px
 }
 
 .scroll-style::-webkit-scrollbar-thumb:hover {

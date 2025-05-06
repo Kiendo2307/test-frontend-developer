@@ -6,7 +6,7 @@ const RightHeader = () => {
     return (
         <div className="flex gap-[8px] items-center">
             <Search />
-            <CustomButton text="Login" width="w-[71px]" height="h-[44px]" />
+            <CustomButton rounded="rounded-[8px]" text="Login" width="w-[71px]" height="h-[44px]" />
             <Image
                 className="cursor-pointer"
                 width={32}

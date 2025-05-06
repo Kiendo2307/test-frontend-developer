@@ -5,17 +5,19 @@ interface CustomButtonProps {
     width?: string;
     height?: string;
     className?: string;
+    rounded?: string;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
     text,
-    width = "w-[200px]",
-    height = "h-[44px]",
-    className = "",
+    width ,
+    height,
+    className,
+    rounded,
 }) => {
     return (
         <button
-            className={`bg-[#FF1E02] cursor-pointer text-white text-[16px] font-semibold text-[16px] font-semibold rounded-[8px] ${width} ${height} ${className}`}
+            className={`bg-[#FF1E02] cursor-pointer text-white text-[16px] font-semibold ${rounded} ${width} ${height} ${className}`}
         >
             {text}
         </button>
