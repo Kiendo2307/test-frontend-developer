@@ -1,4 +1,5 @@
 import BoxBorderLine from "../custom/BoxBorderLine";
+import CardBorderLine from "../custom/CardBorderLine";
 import Image from "next/image";
 
 const vouchers = [
@@ -29,7 +30,7 @@ const VoucherCard = () => {
   return (
     <div className="flex gap-[24px]">
       {vouchers.map((voucher, index) => (
-        <BoxBorderLine
+        <CardBorderLine
           key={index}
           width="369px"
           height="416px"
@@ -41,7 +42,7 @@ const VoucherCard = () => {
             <Image width={327} height={228} alt={voucher.title} src={voucher.image} />
             <div className="font-bold text-[20px] text-[#D9D9D9]">{voucher.title}</div>
             <div className="font-light text-[20px] text-[#FFFFFF]">{voucher.description}</div>
-            <BoxBorderLine backgroundImage="#FF1E02" width="full" height="44px">
+            <BoxBorderLine backgroundImage="#FF1E02" width="100%" height="44px">
               <div className="flex h-full items-center gap-2 text-center justify-center">
                 <div className="text-[#D2CACA] font-semibold text-[16px] line-through">
                   {voucher.originalPrice}
@@ -52,7 +53,7 @@ const VoucherCard = () => {
               </div>
             </BoxBorderLine>
           </div>
-        </BoxBorderLine>
+        </CardBorderLine>
       ))}
     </div>
   );

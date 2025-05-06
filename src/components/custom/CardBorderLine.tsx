@@ -1,4 +1,4 @@
-interface BoxBorderLineProps {
+interface CardBorderLineProps {
   children: React.ReactNode;
   width?: string;
   height?: string;
@@ -7,18 +7,18 @@ interface BoxBorderLineProps {
   backgroundImage?: string;
 }
 
-const BoxBorderLine = ({
+const CardBorderLine = ({
   children,
   width ,
   height,
   padding,
   borderRadius,
   backgroundImage,
-}: BoxBorderLineProps) => {
+}: CardBorderLineProps) => {
   return (
     <div className="container-box">
       <div
-        className="border-box"
+        className="border-card"
         style={{ width, height, borderRadius }}
       >
         <div
@@ -37,4 +37,4 @@ const BoxBorderLine = ({
   );
 };
 
-export default BoxBorderLine;
+export default CardBorderLine;

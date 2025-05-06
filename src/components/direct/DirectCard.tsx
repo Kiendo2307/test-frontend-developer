@@ -1,4 +1,5 @@
 import BoxBorderLine from "../custom/BoxBorderLine";
+import CardBorderLine from "../custom/CardBorderLine";
 import Image from "next/image";
 
 const DirectCard = () => {
@@ -40,7 +41,7 @@ const DirectCard = () => {
   return (
     <div className="flex gap-6">
       {cardData.map((card, index) => (
-        <BoxBorderLine
+        <CardBorderLine
           key={index}
           backgroundImage="#240500F7"
           borderRadius="16px"
@@ -87,7 +88,7 @@ const DirectCard = () => {
               </BoxBorderLine>
             </div>
           </div>
-        </BoxBorderLine>
+        </CardBorderLine>
       ))}
     </div>
   );
