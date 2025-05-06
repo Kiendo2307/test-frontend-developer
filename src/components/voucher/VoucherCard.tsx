@@ -39,7 +39,7 @@ const VoucherCard = () => {
           borderRadius="16px"
         >
           <div className="flex flex-col gap-[8px]">
-            <Image width={327} height={228} alt={voucher.title} src={voucher.image} />
+            <Image width={327} height={228} alt={voucher.title} src={voucher.image} style={{ width: '100%', height: 'auto' }}/>
             <div className="font-bold text-[20px] text-[#D9D9D9]">{voucher.title}</div>
             <div className="font-light text-[20px] text-[#FFFFFF]">{voucher.description}</div>
             <BoxBorderLine backgroundImage="#FF1E02" width="100%" height="44px">

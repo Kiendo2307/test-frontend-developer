@@ -10,7 +10,7 @@ interface ProvidersProps {
 export function Providers({ children }: ProvidersProps) {
     return (
         <>
-            <Meta title="StarkCity - built on Citiverse" description="" />
+            <Meta title="Test-Fe" description="" />
             {children}
         </>
     );
