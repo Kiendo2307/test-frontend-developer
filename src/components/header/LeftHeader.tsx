@@ -19,7 +19,7 @@ const LeftHeader = () => {
             {menuItems.map((item, index) => (
                 <div key={index} className="flex items-center gap-[10px] cursor-pointer">
                     <Image width={20} height={20} alt={item.label} src={item.icon} />
-                    <div className="text-[16px] text-[#FFFFFF] font-semibold">{item.label}</div>
+                    <div className="text-[16px] text-custom-white font-semibold">{item.label}</div>
                 </div>
             ))}
         </div>

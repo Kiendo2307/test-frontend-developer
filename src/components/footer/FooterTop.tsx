@@ -19,9 +19,9 @@ const socialLinks = ["X", "Facebook", "Linkedln", "Youtube", "Pinterest", "Insta
 
 const FooterTop = () => {
   const sectionClass = "flex flex-col gap-2";
-  const titleClass = "font-bold text-[24px] text-[#FFFFFF]";
-  const itemClass = "font-normal text-[20px] text-[#FFFFFF]";
-  const socialItemClass = "font-normal text-[16px] text-[#FFFFFF]";
+  const titleClass = "font-bold text-[24px] text-custom-white";
+  const itemClass = "font-normal text-[20px] text-custom-white";
+  const socialItemClass = "font-normal text-[16px] text-custom-white";
 
   return (
     <div

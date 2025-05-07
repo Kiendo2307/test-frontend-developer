@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import BoxBorderLine from "../custom/BoxBorderLine";
 
 const qnaData = [
   {
@@ -40,11 +39,16 @@ const QnAItem = () => {
         const isOpen = openItems[index];
 
         return (
-          <BoxBorderLine
+          <div
             key={index}
-            padding="32px 12px"
-            backgroundImage="#2F0700"
-            width="1152px"
+            className="w-[1152px] bg-[#2F0700] rounded-[16px]"
+            style={{
+              border: "1px solid",
+              borderImageSource:
+                "linear-gradient(96.75deg, #C9C9C9 -2.49%, #000000 51.75%, #C9C9C9 102.95%)",
+              borderImageSlice: 1,
+              padding: "32px 12px"
+            }}
           >
             <div className="flex flex-col gap-6">
               <div className="flex gap-6">
@@ -56,24 +60,23 @@ const QnAItem = () => {
                   src="/assets/icons/icon_down.svg"
                   className={`cursor-pointer transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                 />
-                <div className="font-bold text-[24px] text-[#FFFFFF]">
+                <div className="font-bold text-[24px] text-custom-white">
                   {item.question}
                 </div>
               </div>
               <div
-                className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  isOpen ? "h-auto opacity-100" : "h-0 opacity-0"
-                }`}
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? "h-auto opacity-100" : "h-0 opacity-0"
+                  }`}
                 style={{ transitionDelay: isOpen ? "0.3s" : "0s" }}
               >
                 {isOpen && (
-                  <div className="font-light text-[20px] text-[#FFFFFF]">
+                  <div className="font-light text-[20px] text-custom-white">
                     {item.answer}
                   </div>
                 )}
               </div>
             </div>
-          </BoxBorderLine>
+          </div>
         );
       })}
     </div>

@@ -1,7 +1,17 @@
 
+import useFetchData from "@/src/hooks/useFetchData";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const FooterBottom = () => {
+  const { data } = useFetchData("/api/year");
+  const [year, setYear] = useState(null);
+
+  useEffect(() => {
+    if (data && data.year && year === null) {
+      setYear(data.year);
+    }
+  }, [data, year]);
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between container h-[98px]">
       <div className="flex items-center">
@@ -14,7 +24,7 @@ const FooterBottom = () => {
         />
       </div>
       <div className="text-[#616161] text-[16px] flex flex-col lg:flex-row gap-1 lg:gap-4 text-normal">
-        <div>© 2025 HABBYY PTE. LTD. All Rights Reserved.</div>
+        <div>© {year} HABBYY PTE. LTD. All Rights Reserved.</div>
         <div>
           <a className="cursor-pointer underline">Privacy Policy</a> |{" "}
           <a className="cursor-pointer underline">Cookie Settings</a>

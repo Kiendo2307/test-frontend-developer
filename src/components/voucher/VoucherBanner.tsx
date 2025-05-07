@@ -9,10 +9,10 @@ const VoucherBanner = () => {
       borderRadius="16px"
     >
       <div className="flex h-full justify-center items-center gap-2">
-        <div className="w-[57px] h-[24px] bg-[#FFFFFF] text-center text-[#333333] text-[12px] font-bold rounded-[16px] flex items-center justify-center">
+        <div className="w-[57px] h-[24px] text-custom-white text-center text-[#333333] text-[12px] font-bold rounded-[16px] flex items-center justify-center">
           +200%
         </div>
-        <div className="text-[#FFFFFF] text-[16px] font-bold">
+        <div className="text-custom-white text-[16px] font-bold">
           Triple the value of the first purchase!
         </div>
       </div>

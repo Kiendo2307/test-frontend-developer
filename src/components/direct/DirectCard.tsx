@@ -54,7 +54,7 @@ const DirectCard = () => {
               alt={card.title}
               src={card.imgSrc}
             />
-            <div className="font-bold text-[20px] text-[#D9D9D9]">{card.title}</div>
+            <div className="font-bold text-[20px] text-custom-text">{card.title}</div>
             <div
               style={{ padding: "0 12px" }}
               className="w-[228px] h-[44px] flex justify-between items-center bg-[#482929]"
@@ -72,12 +72,12 @@ const DirectCard = () => {
             </div>
             <div className="flex gap-2">
               <BoxBorderLine backgroundImage="#FF1E02" width="176px" height="44px">
-                <div className="text-[16px] justify-center h-full items-center flex font-semibold text-[#FFFFFF]">
+                <div className="text-[16px] justify-center h-full items-center flex font-semibold text-custom-white">
                   {card.price}
                 </div>
               </BoxBorderLine>
               <BoxBorderLine backgroundImage="#FF1E02" width="44px" height="44px">
-                <div className="text-[16px] justify-center h-full items-center flex font-semibold text-[#FFFFFF]">
+                <div className="text-[16px] justify-center h-full items-center flex font-semibold text-custom-white">
                   <Image
                     width={20}
                     height={20}

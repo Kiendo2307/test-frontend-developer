@@ -7,10 +7,10 @@ const PromoCard = () => {
     <div className="container relative">
       <BoxBorderLine width="1155px" height="268px" padding="32px" backgroundImage="#2F0700" borderRadius="36px">
         <div className="flex flex-col gap-3">
-          <h2 className="text-[48px] font-bold text-[#D9D9D9]">
+          <h2 className="text-[48px] font-bold text-custom-text">
             Get +20% more!
           </h2>
-          <p className="text-[20px] text-[#D9D9D9]">
+          <p className="text-[20px] text-custom-text">
             Offer extra discount to players on Web Shop purchases.
           </p>
           <div className="flex gap-2">
@@ -25,7 +25,7 @@ const PromoCard = () => {
                   alt=""
                   src="/assets/icons/charm_shield_tick.svg"
                 />
-                <span className="text-[20px] font-semibold text-[#D9D9D9]">
+                <span className="text-[20px] font-semibold text-custom-text">
                   {text}
                 </span>
               </div>

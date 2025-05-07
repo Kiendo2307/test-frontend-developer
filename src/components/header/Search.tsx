@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Search = () => {
     return (
-        <div style={{ padding: "0px 20px" }} className="flex w-[324px] h-[44px] rounded-[8px] bg-[#FFFFFF] justify-between">
+        <div style={{ padding: "0px 20px" }} className="flex w-[324px] h-[44px] rounded-[8px] bg-custom-white justify-between">
             <input
                 type="text"
                 placeholder="Fortnight: Sabrina"

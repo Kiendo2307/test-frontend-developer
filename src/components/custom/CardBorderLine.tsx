@@ -5,14 +5,20 @@ interface CardBorderLineProps {
   padding?: string;
   borderRadius?: string;
   backgroundImage?: string;
+  display?: string;
+  alignItems?: string;
+  justifyContent?: string;
 }
 
 const CardBorderLine = ({
   children,
-  width ,
+  width,
   height,
   padding,
   borderRadius,
+  display,
+  alignItems,
+  justifyContent,
   backgroundImage,
 }: CardBorderLineProps) => {
   return (
@@ -23,12 +29,17 @@ const CardBorderLine = ({
       >
         <div
           className="inner-box"
-          style={{ padding, borderRadius,backgroundImage: backgroundImage?.startsWith("linear-gradient")
-            ? backgroundImage
-            : undefined,
-          backgroundColor: !backgroundImage?.startsWith("linear-gradient")
-            ? backgroundImage
-            : undefined, }}
+          style={{
+            display,
+            alignItems,
+            justifyContent,
+            padding, borderRadius, backgroundImage: backgroundImage?.startsWith("linear-gradient")
+              ? backgroundImage
+              : undefined,
+            backgroundColor: !backgroundImage?.startsWith("linear-gradient")
+              ? backgroundImage
+              : undefined,
+          }}
         >
           {children}
         </div>
